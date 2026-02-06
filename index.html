@@ -45,17 +45,40 @@
       line-height: 1.8rem;
       color: #666;
     }
+
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .imagenes img {
+      width: 18rem;
+      height: 12rem;
+      object-fit: cover;
+      border-radius: 1rem;
+      box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+    }
   </style>
 </head>
 <body>
 
   <div class="contenedor">
-     <h1>Hola, soy Raquel Villarroel</h1>
+    <h1>Hola, soy Raquel Villarroel</h1>
   <h2>Amante de los gatos</h2>
 
   <p>
     Esta es una página sobre gatitos. Me gustan mucho al igual que los perritos, pero hoy voy a compartir el amor que le tengo a los gatitos.
   </p>
+
+
+    <div class="imagenes">
+      <img src="yo.jpg" alt="Foto mía">
+      <img src="gato1.jpg" alt="Mi gato">
+      <img src="gato2.jpg" alt="Otro gato mío">
+    </div>
   </div>
 
 </body>
