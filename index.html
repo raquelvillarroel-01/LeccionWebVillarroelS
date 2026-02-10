@@ -23,7 +23,7 @@
       margin: auto;
       background-color: white;
       padding: 2rem;
-      border-radius: 1rem;
+      border-radius: 1.5rem;
       box-shadow: 0 0 1rem rgba(0,0,0,0.1);
       text-align: center;
     }
@@ -68,7 +68,7 @@
       background-color: #ff6f91;
       color: white;
       padding: 0.9rem 1.6rem;
-      border-radius: 0.7rem;
+      border-radius: 0.8rem;
       text-decoration: none;
       font-size: 1rem;
       transition: 0.3s;
@@ -83,18 +83,28 @@
       justify-content: center;
       gap: 2rem;
       margin-bottom: 2rem;
+      flex-wrap: wrap;
     }
 
     .tarjeta {
       background: #f2f2f2;
-      padding: 1rem 1.5rem;
+      padding: 0.8rem 1.3rem;
       border-radius: 1rem;
       box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
       font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .tarjeta:hover {
+      background: #ffe3eb;
     }
 
     .tarjeta i {
-      margin-right: 0.5rem;
       color: #ff6f91;
     }
 
@@ -102,6 +112,48 @@
       font-size: 3rem;
       color: #6c63ff;
       margin-bottom: 1rem;
+    }
+
+    .info {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .info-item {
+      background: #fafafa;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 0.5rem rgba(0,0,0,0.08);
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: #444;
+    }
+
+    .info-item i {
+      font-size: 1.3rem;
+      color: #ff6f91;
+    }
+
+    .redes {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .redes a {
+      font-size: 2rem;
+      color: #ff6f91;
+      transition: 0.3s;
+    }
+
+    .redes a:hover {
+      color: #ff4f78;
     }
   </style>
 </head>
@@ -115,7 +167,7 @@
     <h2>Amante de los gatos</h2>
 
     <p>
-      <i class="fa-solid fa-heart me-2" style="color:red;"></i>
+      <i class="fa-solid fa-heart" style="color:red; margin-right:0.4rem;"></i>
       Esta es una página web donde puedes observar sobre gatitos, porque
       me gustan mucho al igual que los perritos,
       pero hoy voy a compartir el amor que le tengo a los gatitos aun que soy
@@ -123,15 +175,12 @@
     </p>
 
     <div class="menu">
-      <div class="tarjeta">
-        <i class="fa-solid fa-paw"></i> Gatitos
-      </div>
-      <div class="tarjeta">
+      <a href="https://www.pexels.com/search/cat/" target="_blank" class="tarjeta">
         <i class="fa-solid fa-camera"></i> Fotos
-      </div>
-      <div class="tarjeta">
+      </a>
+      <a href="https://www.boredpanda.com/cute-cats/" target="_blank" class="tarjeta">
         <i class="fa-solid fa-star"></i> Favoritos
-      </div>
+      </a>
     </div>
 
     <div class="imagenes">
@@ -141,7 +190,29 @@
     </div>
 
     <a href="https://es.pinterest.com/pggr/gatos/" target="_blank" class="boton">
-      <i class="fa-brands fa-pinterest me-2"></i> Ver mas gatitos quí
+      <i class="fa-brands fa-pinterest" style="margin-right:0.4rem;"></i> Ver gatos en Pinterest
+    </a>
+
+    <div class="info">
+      <div class="info-item">
+        <i class="fa-solid fa-circle-info"></i> Más información
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-phone"></i> Teléfono: 099 999 9999
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-envelope"></i> contacto@gatitos.com
+      </div>
+    </div>
+
+    <div class="redes">
+      <a href="https://www.instagram.com/cats_of_instagram/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/catsofinstagram/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
 
   </div>
 
